@@ -1,0 +1,9 @@
+import java.math.BigInteger;
+class Solution {
+    public String addBinary(String a, String b) {
+        BigInteger v1 = new BigInteger(a,2);
+        BigInteger v2 = new BigInteger(b,2);
+        BigInteger s = v1.add(v2);
+        return s.toString(2);
+    }
+}
